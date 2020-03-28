@@ -1,5 +1,5 @@
 <meta charset="utf-8">			<!-- кодировка текста -->
-	<title>Сложные эфиры</title>			<!-- заголовок документа -->
+	<title>TEST</title>			<!-- заголовок документа -->
 	<link rel="stylesheet" type="text/css" href="style.css" />			<!-- импорт css файла, где указаны некоторые параметры стилевого оформления -->
 	<meta name="description" content ="Сложных эфиры карбоновых кислот и их применение"> <!-- краткое описание сайта -->
 	</head>
@@ -21,7 +21,7 @@
 				</li>
 			<p></p>	
 			
-			<li><a href="usage">О применении сложных эфиров</a>
+			<li><a href="#usage">О применении сложных эфиров</a>
 				<ol>
 					 <li><a href="#medical">В медецине</a></li>
 					 <li><a href="#indusrty">В промышленности</a></li>
@@ -41,11 +41,11 @@
 			<img src="poluchenie.jpg" alt="Ошибка при отображении картинки" style="color:white;" width="600" height="95">			<!-- вставка картинки, где src - путь к файлу, alt - альтенативный текст, если при отображении картинки возникнет ошибка, далее - цвет alt текста и размеры пикчи-->
 			<p></p>			<!-- текстовый абзац без текста для отступа -->
 			
-			<strong id="Phys"> Физические свойства</strong>			<!-- тег <strong> - жирный текст -->
+			<strong id="Phys">Физические свойства</strong>			<!-- тег <strong> - жирный текст -->
 			<p>Сложные эфиры низших карбоновых кислот (с числом атомов углерода до 8) - летучие жидкости или твёрдые вещества, плохо растворяющиеся в воде, с приятным запахом, легче воды. 
 			Сложные эфиры высших спиртов и карбоновых кислот - твёрдые, воскоподобные вещества.</p>			<!-- текстовый абзац -->
 			
-			<strong id="nature"> Распространение в природе</strong>			<!-- тег <strong> - жирный текст -->
+			<strong id="nature">Распространение в природе</strong>			<!-- тег <strong> - жирный текст -->
 			<p>Сложные эфиры жироко распространены в природе. Ароматы цветов, ягод, плодов и других частей растений обусловлен присутствием в них сложных эфиров.
 			Последние являются ведущими составными частями эфирных масел (летучих веществ, которые можно выделить из определённого вида растений).<p>
 			
@@ -104,7 +104,7 @@
 			</article>  <!-- окончание скрипта -->
 			<p></p>
 			
-			<strong id="industry"><u>В промышленности</u></strong>
+			<strong id="industry"><u>В парфюмерной промышленности</u></strong>
 			<article>		<!-- article начинат выполнение скрипта, который отвечает за кнопки "подробнее" и "скрыть", далее прописан цвет содержимого текста-->
 			<p>Сложные эфиры карбоновых кислот дают самые разнообразные оттенки запахов, от запаха тропических орхидей до характерного аромата фруктов.</p>
 			<div class="leftimg">			 <!-- тег <div> предназначен для выделения фрагмента документа с целью изменения вида содержимого, значения class="leftimg" прописаны в файле css -->
@@ -133,38 +133,6 @@
 			</div>
 			<img src="aqua.png" alt="Ошибка при отображении картинки" style="color:white; margin-left: 30px;" width="160" height="230">
 		</main>
-		<script type="text/javascript">			 <!-- скрипт, отвечающий за время внизу страницы, на сайте выводится время, которое сейчас на устройстве пользователя-->
-			function clock() {
-			var d = new Date();
-			var month_num = d.getMonth()
-			var day = d.getDate();
-			var hours = d.getHours();
-			var minutes = d.getMinutes();
-			var seconds = d.getSeconds();
-
-			month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
-			"июля", "августа", "сентября", "октября", "ноября", "декабря");
-
-			if (day <= 9) day = "0" + day;
-			if (hours <= 9) hours = "0" + hours;
-			if (minutes <= 9) minutes = "0" + minutes;
-			if (seconds <= 9) seconds = "0" + seconds;
-
-			date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
-			" г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
-			if (document.layers) {
-			 document.layers.doc_time.document.write(date_time);
-			 document.layers.doc_time.document.close();
-			}
-			else document.getElementById("doc_time").innerHTML = date_time;
-			 setTimeout("clock()", 1000);
-			}
-		</script>
-		<div class="dop"> </div>
-		<span id="doc_time" style="color:white;">Дата\время</span>
-		<script type="text/javascript">
-		 clock();
-		</script>
 		
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -179,4 +147,5 @@
 		});
 	</script>
 	</body>
+</html>
 </html>
