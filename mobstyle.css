@@ -1,0 +1,106 @@
+	@charset "utf-8";
+	
+	body {
+		background: #313131;
+		max-width: auto;
+		margin: 10px auto;
+		padding: 30px;
+		background-image:
+    repeating-linear-gradient(
+		150deg,
+		rgba(255, 255, 255, 0.06),
+		rgba(255, 255, 255, 0.06) 0.5px,
+		transparent 0,
+		transparent 41px),
+    repeating-linear-gradient(
+		-150deg,
+		rgba(255, 255, 255, 0.06),
+		rgba(255, 255, 255, 0.06) 0.5px,
+		transparent 0,
+		transparent 41px);
+			}
+	ol {
+		counter-reset: section;
+		list-style-type: none;
+		}
+	li::before {
+		counter-increment: section;
+		content: counters(section,".") " ";
+	}
+	li {
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		color: #F6C25F;
+		font-size: 16px;
+		}
+	h0 {
+		font-family: "Times New Roman", Times, serif;
+		color: #E5E5E5;
+		font-size: 25px;
+		text-indent: 20px;
+		margin-left: 15px;
+		}
+	.brdr {
+		width: 350px;
+		height: 270px;
+		outline: 2px solid #000;
+		background: #363636;
+		}
+	.leftimg {
+		float:left;
+		margin: 1px 7px 7px 0;
+		}
+	h1 {
+		font-family: "Times New Roman", Times, serif;
+		color: #E5E5E5;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 2px solid #AAAAAA;
+		text-align:  center;
+		font-size: 40px;
+		}
+	h2 {
+		font-family: "Times New Roman", Times, serif;
+		color: #E5E5E5;
+		font-size: 23pt;
+		}
+	h3 {
+		font-family: "Times New Roman", Times, serif;
+		color: #E5E5E5;
+		padding-bottom: 20px;
+		font-size: 23pt;
+		margin-top: 0.5em;
+		margin-bottom: 20px;
+		}
+	p {
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		color: #E3E3E3;
+		font-size: 18px;
+		}
+	.border {
+		border-bottom: 2px solid #AAAAAA;	
+		margin-top: 2em;
+		}
+	.margin {
+		margin-top: 2em;
+		}
+	strong {
+		font-family: "Times New Roman", Times, serif;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		color: #E3E3E3;
+		font-size: 20px;
+		}
+	.dop {
+		border-bottom: 2px solid #AAAAAA;
+		margin-top: 2em;
+		}
+	a {
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		text-decoration: none;
+		color: #2BB179;
+		font-size: 16px;
+		border-bottom: 1px solid; #2BB179;
+		}
+	u {
+		text-decoration: none;
+		border-bottom: 2px solid #E3E3E3;
+		}
