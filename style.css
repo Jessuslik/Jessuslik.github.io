@@ -41,7 +41,7 @@
 		}
 	.brdr {
 		width: 440;
-		height: auto;
+		height: 270;
 		outline: 2px solid #000;
 		background: #363636;
 		}
@@ -96,16 +96,11 @@
 	a {
 		font-family: Verdana, Arial, Helvetica, sans-serif; 
 		text-decoration: none;
-		border-bottom: 1px solid #2BB179;
 		color: #2BB179;
 		font-size: 16px;
+		border-bottom: 1px solid; #2BB179;
 		}
 	u {
 		text-decoration: none;
 		border-bottom: 2px solid #E3E3E3;
-		}
-	a1 {
-		font-family: Verdana, Arial, Helvetica, sans-serif; 
-		text-decoration: none;
-		color: #2BB179;
 		}
