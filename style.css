@@ -40,8 +40,8 @@
 		margin-left: 15px;
 		}
 	.brdr {
-		width: 440px;
-		height: 271px;
+		width: 440;
+		height: 270;
 		outline: 2px solid #000;
 		background: #363636;
 		}
@@ -103,4 +103,9 @@
 	u {
 		text-decoration: none;
 		border-bottom: 2px solid #E3E3E3;
+		}
+	.mobile {
+		position: absolute;
+		top: 390px;
+		left: 265px;
 		}
