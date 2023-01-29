@@ -9,55 +9,91 @@
   </head>
   
   <body>
-  
-    <header>
-      <h1>NABU</h1>
-	  <h1>Барбершоп</h1>
-    </header>
+	
+	<header>
+	 <a href="site.html"><img class="header-logo" src="logo.png" height="150px"></a>
+	 </header>
+	 <style>
+   .line {
+    border-bottom: 2px solid #CCC; /* Параметры линии */
+   }
+    </style>
+	<div class="line"></div>
+    <!-- <header> -->
+      <!-- <h1>NABU</h1> -->
+	  <!-- <h1>Барбершоп</h1> -->
+    <!-- </header> -->
 	<section>
 	
 	  <div class = "button-conteiner">
-		<a id="btn2" class="button1" tabindex="0" onclick="showText2()">Услуги и цены</a>
-		<a id="btn1" class="button1" tabindex="1" onclick="showText1()">О нас</a>
-		<a id="btn3" class="button1" tabindex="2" onclick="showText3()">Контакты</a>
+		<a id="btn2" class="button1" tabindex="0" onclick="showText2()" style="order:1">Услуги и цены</a>
+		<a id="btn1" class="button1" tabindex="1" onclick="showText1()" style="order:2">О нас</a>
+		<a id="btn3" class="button1" tabindex="2" onclick="showText3()" style="order:3">Контакты</a>
 	  </div>
 
-      <article id="text1" style="display:block">
+      <article id="text1" style="display:block; background: linear-gradient(to top, #555, #F0F8FF);">
         <h2>First article</h2>
 
         <p style="font-size:18px; text-align: center; border: 2px solid #333; line-height:1.5">Барбершоп NABU - это место, где Вы можете ожидать высококачественных услуг и профессионального подхода. Наши барберы обладают многолетним опытом и постоянно повышают свою квалификацию, чтобы Вас порадовать идеальными стрижками и бритьём. Мы используем только качественные и прочные инструменты и предлагаем широкий выбор услуг, включая стрижки, бритьё, окрашивание и укладку волос. Мы работаем каждый день, чтобы Вам было комфортно и приятно в нашем мастерской. Ждем Вас в нашем барбершопе!</p>
 		<div class="images">
-		<img src="low.jpg" width=30% height=30%>
+		<img src="workshop.png" width=30% height=40%>
 		<img src="1.jpg" width=30% height=30%>
 		<img src="2.jpg" width=30% height=30%>
 		</div>
       </article>
 
-      <article id ="text2" style="display:none">
+      <article id ="text2" style="display:none; background: linear-gradient(to bottom, #F0F0F0, #555);">
         <h2 style="text-align: left; padding-left: 10%">Услуги</h2>
 
         <p>I am sure learning foreign languages is very important nowadays. People start learning a foreign language, because they want to have a better job, a possibility to study abroad or take part in international conferences. People want to have a possibility to get a higher education abroad or even start their career there. The most popular among foreign languages are English, German, Italian, French and Spanish.</p>
 		
-		<div class="lists-container">
-		  <ul>
-			<li style="list-style-type: none"><b>Стрижки</b></li>
-			<li>Мужская стрижка</li>
-			<li>Стрижка машинкой</li>
-			<li>Детская стрижка </li>
-		  </ul>
-		  <ul class>
-			<li style="list-style-type: none"><b>Борода и бритье</b></li>
-			<li>Моделирование бороды </li>
-			<li>Стрижка усов и бороды </li>
-			<li>Бритье опасной бритвой </li>
-		  </ul>
-		</div>
+		<div class="tbl">
+		<table class="table">
+			<thead>
+			<th>Стрижки</th>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Мужская стрижка</td>
+				<td>1500</td>
+			</tr>
+			<tr>
+				<td>Стрижка машинкой</td>
+				<td>800</td>
+			</tr>
+			<tr>
+				<td>Детская стрижка</td>
+				<td>1000</td>
+			</tr>
+			</tbody>
+		  </table>
+		  <table class="table">
+		  <thead>
+			<th>Борода и бритье</th>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Моделирование бороды</td>
+				<td>1000</td>
+			</tr>
+			<tr>
+				<td>Стрижка усов и бороды</td>
+				<td>1200</td>
+			</tr>
+			<tr>
+			<td>Бритье опасной бритвой</td>
+			<td>1200</td>
+			</tr>
+			</tbody>
+			</table>
+		 </div>
+	
 		<div class="images">
 		<p style="text-align: center"><img src="4.jpg" flex-direction=collumns align-items=”center” width=50% height=30%></p>
 		</div>
       </article>
 
-      <article id="text3" style="display:none">
+      <article id="text3" style="display:none; background: linear-gradient(to bottom, rgb(240, 248, 255), #555);">
         <h2 id="h2Contacts">Контакты в Серпухове</h2>
 
         <p class="contactText"> </p>
